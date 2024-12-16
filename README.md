@@ -61,11 +61,7 @@ Double-click a table from the list to:
 Export it as a CSV file.
 Generate a Python script for automated extraction.
 Generated Python Script Example
-When you extract a table, a Python script is also generated. This script can be reused to extract the same table from the specified webpage. Example script:
-
-import requests
-from bs4 import BeautifulSoup
-import pandas as pd
+When you extract a table, a Python script is also generated. This script can be reused to extract the same table from the specified webpage.
 
 Dependencies
 All required dependencies are listed in requirements.txt. To install them, run: pip install -r requirements.txt
