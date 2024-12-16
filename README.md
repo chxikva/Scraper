@@ -1,34 +1,43 @@
-Custom Browser with Table Extraction
+# Custom Browser with Table Extraction
+
 A Python-based GUI application to browse web pages and extract HTML tables. This project allows users to extract tables from a web page, save them as CSV files, and even generate Python scripts to automate table extraction for future use.
 
-Features
-Browse any website using a custom-built web browser.
-Automatically detect and list all HTML tables on a web page.
-Export selected tables to CSV format.
-Generate Python scripts for automated table extraction.
-User-friendly GUI built with PyQt5.
-Real-time HTML parsing using BeautifulSoup and Pandas.
+---
 
-Technologies Used
-Python: Core programming language.
-PyQt5: For building the graphical user interface.
-BeautifulSoup: For parsing HTML and extracting tables.
-Pandas: For handling and exporting table data.
-QtWebEngine: For embedding a browser within the application.
+## Features
 
-Installation
-Prerequisites
-Python 3.8 or higher
-Virtual environment (optional but recommended)
-Steps
+- Browse any website using a custom-built web browser.
+- Automatically detect and list all HTML tables on a web page.
+- Export selected tables to CSV format.
+- Generate Python scripts for automated table extraction.
+- User-friendly GUI built with PyQt5.
+- Real-time HTML parsing using BeautifulSoup and Pandas.
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/chxikva/Scraper.git
-cd <your-repo>
+---
 
+## Technologies Used
+
+- **Python**: Core programming language.
+- **PyQt5**: For building the graphical user interface.
+- **BeautifulSoup**: For parsing HTML and extracting tables.
+- **Pandas**: For handling and exporting table data.
+- **QtWebEngine**: For embedding a browser within the application.
+
+---
+
+## Installation
+
+### Prerequisites
+- Python 3.8 or higher
+- Virtual environment (optional but recommended)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/chxikva/Scraper.git
+   cd Scraper
 Create a virtual environment (optional):
+
 bash
 Copy code
 python -m venv venv
