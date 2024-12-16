@@ -39,16 +39,19 @@ A Python-based GUI application to browse web pages and extract HTML tables. This
 Create a virtual environment (optional):
 
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
+source venv/bin/activate 
 
+# On Windows:
+venv\Scripts\activate
+
+Install dependencies:
 bash
 Copy code
 pip install -r requirements.txt
-Usage
-Run the application:
 
+Run the application:
 python main.py
+
 Enter a URL in the browser's address bar and press Enter to load the page.
 
 Click "Extract Tables" to parse the page and detect all HTML tables.
@@ -65,9 +68,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 Dependencies
-All required dependencies are listed in requirements.txt. To install them, run:
-
-pip install -r requirements.txt
+All required dependencies are listed in requirements.txt. To install them, run: pip install -r requirements.txt
 
 Key dependencies include:
 PyQt5
