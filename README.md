@@ -84,15 +84,6 @@ if response.status_code == 200:
 else:
     print("Failed to retrieve the page.")
 
-
-Project Structure
-
-<project-root>/
-│
-├── scrape.py               # Functions for table extraction and script generation
-├── main.py                 # Main application file
-├── requirements.txt        # List of dependencies
-└── README.md               # Project documentation
 Dependencies
 All required dependencies are listed in requirements.txt. To install them, run:
 
