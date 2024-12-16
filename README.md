@@ -64,26 +64,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-url = "https://example.com"
-
-response = requests.get(url)
-if response.status_code == 200:
-    soup = BeautifulSoup(response.content, "html.parser")
-    tables = soup.find_all("table")
-    table = tables[0]  # Replace 0 with the table index you want to extract
-    data = []
-    headers = [th.text.strip() for th in table.find_all("th")]
-    for row in table.find_all("tr"):
-        cells = [td.text.strip() for td in row.find_all("td")]
-        if cells:
-            data.append(cells)
-
-    df = pd.DataFrame(data, columns=headers if headers else None)
-    df.to_csv("output.csv", index=False)
-    print("Table data saved to output.csv")
-else:
-    print("Failed to retrieve the page.")
-
 Dependencies
 All required dependencies are listed in requirements.txt. To install them, run:
 
