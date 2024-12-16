@@ -38,8 +38,6 @@ A Python-based GUI application to browse web pages and extract HTML tables. This
    cd Scraper
 Create a virtual environment (optional):
 
-bash
-Copy code
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install dependencies:
@@ -50,8 +48,6 @@ pip install -r requirements.txt
 Usage
 Run the application:
 
-bash
-Copy code
 python main.py
 Enter a URL in the browser's address bar and press Enter to load the page.
 
@@ -64,8 +60,6 @@ Generate a Python script for automated extraction.
 Generated Python Script Example
 When you extract a table, a Python script is also generated. This script can be reused to extract the same table from the specified webpage. Example script:
 
-python
-Copy code
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -89,9 +83,10 @@ if response.status_code == 200:
     print("Table data saved to output.csv")
 else:
     print("Failed to retrieve the page.")
+
+
 Project Structure
-bash
-Copy code
+
 <project-root>/
 │
 ├── scrape.py               # Functions for table extraction and script generation
@@ -101,11 +96,9 @@ Copy code
 Dependencies
 All required dependencies are listed in requirements.txt. To install them, run:
 
-bash
-Copy code
 pip install -r requirements.txt
-Key dependencies include:
 
+Key dependencies include:
 PyQt5
 beautifulsoup4
 pandas
